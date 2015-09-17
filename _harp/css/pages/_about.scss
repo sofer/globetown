@@ -1,6 +1,6 @@
 .about {
   height: 100vh;
-  background-image: url('/assets/images/training.png');
+  background-image: url('/assets/images/us.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -9,4 +9,59 @@
   h1 {
     color: white;
   }
+}
+
+.about-copy {
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10px 2% 0;
+	position: relative;
+	div {
+		max-width: 800px;
+    width: 100%;
+		margin: auto;
+	}
+  h2 {
+    margin: 2em 0 1em 0;
+  }
+}
+
+.team-image {
+	width:200px;
+	height:200px;
+	display:block;
+	border-radius: 100%;
+	background-size:cover;
+	background-position:center center;
+	background-repeat:no-repeat;
+	margin: 1em auto;
+}
+
+.izaak {
+	background-image:url("/assets/images/us/izaak.jpg");
+}
+
+.bes {
+	background-image:url("/assets/images/us/bes.jpg");
+}
+
+.nikhi {
+	background-image:url("/assets/images/us/nikhila.jpg");
+}
+
+.dan {
+	background-image:url("/assets/images/us/daniel.jpg");
+}
+
+.jack {
+	background-image:url("/assets/images/us/jack.jpg");
+}
+
+.us-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 750px;
+  margin: auto;
 }

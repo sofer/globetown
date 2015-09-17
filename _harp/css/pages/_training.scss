@@ -12,6 +12,7 @@
   }
   * {
     color: white;
+    letter-spacing: 1px;
   }
   button {
     margin: 1.5em;
@@ -39,6 +40,13 @@
   height: 20vw;
   width: 30vw;
   background-color: $color-two;
+}
+
+.box:hover {
+  background-color: $color-one;
+  * {
+    color: white
+  }
 }
 
 @media (max-width: 600px) {
