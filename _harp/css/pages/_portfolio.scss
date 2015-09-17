@@ -1,0 +1,54 @@
+.portf {
+	max-width: 100%;
+  background-color: white;
+  padding: 200px 0;
+  .container {
+    max-width: 900px;
+    margin: auto;
+    h1 {
+      margin: 1em 0;
+    }
+    h2 {
+      margin: 1em 0 0.5em 0;
+    }
+    * {
+      line-height: 160%;
+    }
+  }
+}
+
+
+.center {
+	text-align: center;
+}
+
+.abc-desktop {
+	max-width: 600px;
+	width: 100%;
+	margin: 30px 0;
+}
+
+.abc-mobile {
+	max-width: 100px;
+	width: 100%;
+	margin: 30px;
+	margin-bottom: 42px;
+}
+
+.abc-laptop {
+	max-width: 500px;
+	width: 100%;
+	margin: 30px 0;
+}
+
+.stockport-tablet {
+	max-width: 200px;
+	width: 100%;
+	margin: 20px;
+}
+
+.stockport-mobile {
+	max-width: 100px;
+	width: 100%;
+	margin: 20px;
+}

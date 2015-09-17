@@ -1,0 +1,293 @@
+.landing {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+	height: 90vh;
+  margin-top: 10vh;
+	.section-landing-image {
+    background-image: url("/assets/images/harddrive.png");
+		background-size: cover;
+		background-position: center;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+    left: 0;
+		z-index: -1;
+		transition: opacity .3s ease-in-out;
+		opacity: 1;
+	}
+	.section-landing-image-alt {
+    background-image: url("/assets/images/hands.png");
+		background-size: cover;
+		background-position: center;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+    left: 0;
+		z-index: -2;
+	}
+	h1, p, span {
+		color: #999;
+	}
+	h1 {
+    display: none;
+    color: $color-one;
+    font-size: 50px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-family: 'Lobster', cursive;
+	}
+}
+
+@media (max-width: 700px) {
+  .landing {
+    h1 {
+      display: inline;
+    }
+  }
+}
+
+.copy {
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5% 10px;
+	position: relative;
+	div {
+		max-width: 800px;
+		margin: auto;
+	}
+	h1 {
+		margin-bottom: 5%;
+		font-size: 24px;
+		line-height: 150%;
+    color: $color-three;
+	}
+	h1:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.portfolio {
+	width: 100%;
+	position: relative;
+	background-color: $color-two;
+	height: auto;
+	padding: 30px 70px;
+	overflow: hidden;
+	text-align: center;
+	.images-container {
+		overflow: hidden;
+	}
+	h2 {
+		margin-bottom: 30px;
+	}
+	.h2-margin-top {
+		margin-top: 30px;
+	}
+	.grid-2 {
+		padding: 20px;
+	}
+	.image-one {
+		background-image: url("/assets/images/portfolio/abc.jpg");
+	}
+	.image-two {
+		background-image: url("/assets/images/portfolio/children-kenya.jpg");
+	}
+	.image-three {
+		background-image: url("/assets/images/portfolio/camden.jpg");
+	}
+	.image-four {
+		background-image: url("/assets/images/portfolio/chichester-harbour.jpg");
+	}
+	.image-five {
+		background-image: url("/assets/images/portfolio/stockport.jpg");
+	}
+	.image-six {
+		background-image: url("/assets/images/portfolio/streetflower.jpg");
+	}
+	.image-seven {
+		background-image: url("/assets/images/portfolio/shipping.jpg");
+	}
+	.im {
+		background-color: #999;
+		position: relative;
+		background-position: center;
+		background-size: cover;
+		height: 200px;
+		.overlay {
+			width: 100%;
+			height: 100%;
+			background-color: #707C80;
+			opacity: 0;
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			transition: opacity .7s ease-in-out;
+			h3 {
+				margin: 20px;
+				transition: margin 0.7s ease-in-out;
+			}
+		}
+		&:hover {
+			.overlay {
+				visibility: visible;
+				opacity: 0.9;
+				transition: opacity .7s ease-in-out;
+				h3 {
+					margin: 5px;
+					transition: margin 0.7s ease-in-out;
+				}
+			}
+		}
+	}
+}
+
+.no-padding {
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+@media (max-width: 1000px) {
+	.portfolio {
+		padding: 50px 10px;
+		.grid-2 {
+			padding: 15px;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	.landing {
+		height: 90vh;
+	}
+	.portfolio {
+		padding: 50px 0;
+		.grid-2 {
+			padding: 15px;
+			padding-bottom: 0;
+		}
+	}
+}
+
+.services {
+	width: 100%;
+	position: relative;
+	background-color: $color-three;
+	height: auto;
+	padding: 50px 50px;
+	overflow: hidden;
+	text-align: center;
+	h2 {
+		margin-bottom: 30px;
+	}
+	.container {
+		max-width: 1000px;
+		margin: auto;
+	}
+	.grid-4 {
+		padding: 20px;
+		list-style-type: none;
+		height: 250px;
+	}
+	.services-icon-container {
+		position: relative;
+		height: 150px;
+		width: 150px;
+		margin: auto;
+		margin-bottom: 15px;
+	}
+	.services-icon {
+		height: 150px;
+		width: 150px;
+		margin: auto;
+		background-position: center;
+		background-size: cover;
+		margin-bottom: 15px;
+		position: absolute;
+		transition: opacity .3s ease-in-out;
+		opacity: 1;
+	}
+	.web-application {
+		z-index: 2;
+		background-image: url("/assets/images/services-icons/application-alt.png");
+	}
+	.web-application-alt {
+		background-image: url("/assets/images/services-icons/application.png");
+	}
+	a:hover {
+		.web-application {
+			opacity: 0;
+		}
+	}
+	.training {
+		z-index: 2;
+		background-image: url("/assets/images/services-icons/training-alt.png");
+	}
+	.training-alt {
+		background-image: url("/assets/images/services-icons/training.png");
+	}
+	a:hover {
+		.training {
+			opacity: 0;
+		}
+	}
+	.content-management {
+		z-index: 2;
+		background-image: url("/assets/images/services-icons/content-alt.png");
+	}
+	.content-management-alt {
+		background-image: url("/assets/images/services-icons/content.png");
+	}
+	a:hover {
+		.content-management {
+			opacity: 0;
+		}
+	}
+	.prototyping {
+		z-index: 2;
+		background-image: url("/assets/images/services-icons/prototype-alt.png");
+	}
+	.prototyping-alt {
+		background-image: url("/assets/images/services-icons/prototype.png");
+
+	}
+	a:hover {
+		.prototyping {
+			opacity: 0;
+		}
+	}
+	.mobile-development {
+		z-index: 2;
+		background-image: url("/assets/images/services-icons/mobile-alt.png");
+	}
+	.mobile-development-alt {
+		background-image: url("/assets/images/services-icons/mobile.png");
+	}
+	a:hover {
+		.mobile-development {
+			opacity: 0;
+		}
+	}
+	.responsive-design {
+		z-index: 2;
+		background-image: url("/assets/images/services-icons/responsive-alt.png");
+	}
+	.responsive-design-alt {
+		background-image: url("/assets/images/services-icons/responsive.png");
+	}
+	a:hover {
+		.responsive-design {
+			opacity: 0;
+		}
+	}
+	p {
+		color: #333;
+	}
+}

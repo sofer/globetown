@@ -1,0 +1,33 @@
+@import "helpers/variables";
+@import "base/fontello";
+@import "base/typography";
+@import "components/button";
+@import "components/input";
+@import "layout/contact";
+@import "layout/navbar";
+@import "layout/specifics";
+@import "layout/grid";
+@import "pages/about";
+@import "pages/home";
+@import "pages/portfolio";
+@import "pages/services";
+@import "pages/training";
+
+body {
+  margin: 0;
+}
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, p {
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    font-weight: $color-one;
+  }
+}
