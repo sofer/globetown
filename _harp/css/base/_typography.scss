@@ -25,8 +25,9 @@ a:visited {
   }
 }
 
-li {
-  list-style: none;
+ul {
+  line-height: 180%;
+  list-style-position: inside;
 }
 
 h2 {

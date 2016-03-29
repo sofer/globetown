@@ -1,0 +1,40 @@
+footer {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  nav {
+    height: 80px;
+    width: 88.888%;
+    margin: 0 0 0 11.111%;
+    display: block;
+    padding: 26px 0px 26px 0px;
+    border-top: 1px solid #dedede;
+  }
+
+  .logo {
+    width: 11.111%;
+    margin-left: -11.111%;
+    background-color: yellow;
+  }
+
+  .links {
+    float: left;
+    a {
+      display: inline-block;
+      vertical-align: middle;
+      color: #222;
+      margin: 0 13px 0 0;
+      border-bottom: 1px solid #dedede;
+    }
+  }
+
+  .apply {
+    float: right;
+    a {
+      display: inline-block;
+      text-align: right;
+      vertical-align: middle;
+    }
+  }
+}
