@@ -1,67 +1,40 @@
-.about {
-  height: 100vh;
-  background-image: url('/assets/images/us.jpg');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  h1 {
-    color: white;
-  }
-}
+.content {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 35px 0px;
+  overflow: hidden;
+  clear: both;
 
-.about-copy {
-	background-color: white;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0 10px 2% 0;
-	position: relative;
-	div {
-		max-width: 800px;
+  section {
+    width: 88.888%;
+    margin: 0 0 0 11.111%;
+
+    h1 {
+      line-height: 150%;
+      margin: 0px 0px 35px 0px;
+    }
+
+    p {
+      line-height: 180%;
+    }
+  }
+
+  .title {
+    border-bottom: 1px solid #dedede;
+    overflow: hidden;
+    clear: both;
+    margin-bottom: 30px;
+  }
+
+  nav {
     width: 100%;
-		margin: auto;
-	}
-  h2 {
-    margin: 2em 0 1em 0;
+    height: 300px;
+    border: 1px solid #dedede;
   }
-}
 
-.team-image {
-	width:200px;
-	height:200px;
-	display:block;
-	border-radius: 100%;
-	background-size:cover;
-	background-position:center center;
-	background-repeat:no-repeat;
-	margin: 1em auto;
-}
-
-.izaak {
-	background-image:url("/assets/images/us/izaak.jpg");
-}
-
-.bes {
-	background-image:url("/assets/images/us/bes.jpg");
-}
-
-.nikhi {
-	background-image:url("/assets/images/us/nikhila.jpg");
-}
-
-.dan {
-	background-image:url("/assets/images/us/daniel.jpg");
-}
-
-.jack {
-	background-image:url("/assets/images/us/jack.jpg");
-}
-
-.us-container {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 750px;
-  margin: auto;
+  .space {
+    display: block;
+    margin: 30px 0px 30px 0px;
+  }
 }
