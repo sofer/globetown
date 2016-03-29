@@ -20,26 +20,37 @@
 	float:left
 }
 
-@media (min-width: 800px) {
-	.grid-2 {
-		width: 33.333333%;
-	}
+.grid-2 {
+	width: 33.333333%;
 }
 
-@media (min-width: 800px) {
+@media (max-width: 800px) {
 	.grid-2 {
-		width: 36%;
+		width: 100%;
+		padding: 15px;
 	}
 }
 
 @media (max-width: 800px) {
 	.grid-4 {
 		width: 100%;
+		padding: 15px;
 	}
 }
 
 @media (min-width: 800px) {
 	.grid-4 {
 		width: 64%;
+		padding: 15px;
+	}
+}
+
+.grid-6 {
+	padding: 0;
+}
+
+@media (max-width: 800px) {
+	.grid-6 {
+		padding: 0 10px;
 	}
 }
